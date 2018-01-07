@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript - ratin</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="content">
+
+	<div class="hared">
+		<h1>javascript practice by ratin(a-z) begin level</h1>
+	</div>
+
+
+
+		<div class="main">
+
+
+
+
+
+			<form name="myform" method="post" onsubmit="return valiadedForm()">
+
+			<table style="
+	margin: 0 auto;
+">
+				<tr>
+					<td>Name</td>
+					<td> 
+						<input type="text" name="Name" placeholder="please enter name">
+						
+					</td>
+				</tr>
+
+				<tr>
+					<td>Email</td>
+					<td>
+						<input type="email" name="Email" placeholder="please enter email">
+						
+					</td>
+				</tr>
+
+				<tr>
+					<td>Tlephone</td>
+					<td>
+						<input type="text" name="Tlephone" placeholder="please enter your tlephone"><BR>
+
+						<input type="checkbox" name="notCall" onclick="enableDisable(this)">Please do not call me.
+						
+						
+					</td>
+				</tr>
+
+				
+
+				<tr>
+					<td>what can we help you?</td>
+					<td>
+						<select name="subject" value="">
+							<OPTION>Select one</OPTION>
+							<OPTION>customer service</OPTION>
+							<OPTION>question</OPTION>
+							<OPTION>Other</OPTION>
+						</select>
+						
+					</td>
+				</tr>
+
+				<tr>
+					<td>Comment</td>
+					<td>
+						<input type="text" name="comment">
+						
+					</td>
+				</tr>
+
+
+
+
+
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" name="submit" value="submit">
+						<input type="reset" name="reset" value="Refresh">
+					</td>
+				</tr>
+
+				<tr>
+					<td><p id="show" style="color: red
+					;font-weight: bold;"></p></td>
+				</tr>
+
+
+				
+
+		</table>
+
+</form>
+
+		<script>
+			
+			function valiadedForm() {
+				var name1 = document.myform.Name;
+				var email = document.myform.Email;
+				var tlephone = document.myform.Tlephone;
+				var notCall = document.myform.notCall;
+				var subject = document.myform.subject;
+				var comment = document.myform.comment;
+
+				if (name1.value == "") 
+			{
+				document.getElementById("show").innerHTML = "please Enter Your Name";
+				return false;
+				
+				
+			}
+
+			if (email.value == "") 
+			{
+				document.getElementById("show").innerHTML = "please Enter Your Email";
+				return false;
+				
+			}
+			if (tlephone.value == "" && notCall.checked == false) 
+						{
+							document.getElementById("show").innerHTML = "please Enter Your telphone and valid the chekbox";
+							return false;
+							
+						}
+
+
+
+
+
+				
+			}
+
+
+
+				
+
+
+
+		</script>
+
+
+
+
+
+
+
+
+   
+
+
+	</div>
+
+	<div class="footer" id="show">
+
+		<h2>this is footer</h2>
+	</div>
+			
+
+</section>
+
+
+</body>
+</html>

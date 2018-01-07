@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript clock</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="content">
+
+	<div class="hared">
+		<h1>Making a Clock</h1>
+	</div>
+
+
+
+		<div class="main">
+
+
+<div class="clc">
+	<span id="hour"></span>
+	<span id="minute"></span>
+	<span id="sec"></span>
+</div>
+		<script>
+						
+					function clock() {
+						var date = new Date();//this is javascript defolt function;
+						
+						var hour=date.getHours();
+						var minut=date.getMinutes();
+						var sec=date.getSeconds();
+
+
+						document.getElementById("hour").innerHTML=hour;
+						document.getElementById("minute").innerHTML=": "+minut;
+						document.getElementById("sec").innerHTML=": "+sec;
+
+					}
+
+
+					setInterval(clock, 1000);
+
+
+   </script>
+
+
+
+	</div>
+
+	<div class="footer" id="show">
+
+		<h2>this is footer</h2>
+	</div>
+
+</section>
+
+
+</body>
+</html>

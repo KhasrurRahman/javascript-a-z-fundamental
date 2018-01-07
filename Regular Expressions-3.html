@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="content">
+
+	<div class="hared">
+		<h1>javascript practice by Ratin(a-z) begin level</h1>
+	</div>
+
+
+
+		<div class="main">
+
+
+			
+
+
+
+
+			<button onclick="myreg()">Test now</button>
+			<p id="show">my name is ratin</p>
+			<p id="show1"></p>
+			<p id="show2"></p>
+
+
+		<script>
+			
+			function myreg() {
+
+				txt= document.getElementById("show").innerHTML;
+				document.getElementById("show1").innerHTML=/w/.test(txt);//test is a defols function of js;
+
+				document.getElementById("show2").innerHTML=/r/.exec(txt);
+
+
+			}
+			
+		</script>
+
+
+
+
+
+
+
+
+   
+
+
+	</div>
+
+	<div class="footer" id="show">
+
+		<h2>this is footer</h2>
+	</div>
+			
+
+</section>
+
+
+</body>
+</html>

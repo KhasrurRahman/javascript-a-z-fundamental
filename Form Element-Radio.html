@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="content">
+
+	<div class="hared">
+		<h1>javascript practice by ratin(a-z) begin level</h1>
+	</div>
+
+
+
+		<div class="main">
+
+
+
+
+
+			<form name="myform" onsubmit="testcode()">
+
+			<table style="
+	margin: 0 auto;
+">
+				<tr>
+					<td>Select</td>
+					<td>
+						<input type="radio" name="cbox" value="JAVA">JAVA<br>
+						<input type="radio" name="cbox" value="PHP">PHP<br>
+						<input type="radio" name="cbox" value="HTML">HTML<br>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" name="submit">
+						<input type="reset" name="Refresh">
+					</td>
+				</tr>
+
+				
+
+		</table>
+
+</form>
+
+		<script>
+			
+			function testcode() {
+				document.write("you selected- "+selected());
+			}
+
+
+			function selected(){ 
+				var cd = "<ul>";
+				for(i=0;i<3;i++)
+				{
+					var myvalue = document.myform.cbox[i];
+					if(myvalue.checked)
+					{
+						cd+="<li>"+myvalue.value;
+					}
+				}
+
+				cd+="</ul>";
+				return cd;
+			}
+
+				
+
+
+
+		</script>
+
+
+
+
+
+
+
+
+   
+
+
+	</div>
+
+	<div class="footer" id="show">
+
+		<h2>this is footer</h2>
+	</div>
+			
+
+</section>
+
+
+</body>
+</html>

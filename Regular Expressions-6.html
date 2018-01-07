@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="content">
+
+	<div class="hared">
+		<h1>javascript practice by Ratin(a-z) begin level</h1>
+	</div>
+
+
+
+		<div class="main">
+
+			<table style="
+	margin: 0 auto;
+">
+				<tr>
+					<td>your Email</td>
+					<td><input type="text" id="getvalue" style="width: 300PX;" onkeyup="validemail()"></td>
+				</tr>
+
+				
+
+
+			</table>
+
+
+
+		<script>
+			function validemail() {
+				var email = document.getElementById("getvalue");
+				
+				var regularex = /([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})/;
+
+				email.style.color = "white";
+
+				if(regularex.test(email.value))
+				{
+					email.style.backgroundColor="green";
+				}
+				else
+				{
+					email.style.backgroundColor="red";
+				}
+			}
+		
+		</script>
+
+
+
+
+
+
+
+
+   
+
+
+	</div>
+
+	<div class="footer" id="show">
+
+		<h2>this is footer</h2>
+	</div>
+			
+
+</section>
+
+
+</body>
+</html>

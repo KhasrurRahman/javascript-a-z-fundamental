@@ -1,0 +1,197 @@
+*{margin: 0px;padding: 0px;color: #000000;box-sizing: border-box;}
+
+body{
+	background: #EDECEC;
+	margin: 40px;
+}
+
+.container{
+	width: 90%;
+	height: auto;
+	margin: auto;
+	background: #EDECEC;
+}
+
+div
+{
+	margin-top: 20px;
+}
+
+.div_one
+{
+	float: left;
+	width: 48%;
+	margin-right: 30px;
+}
+
+.div_one >span
+{
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.div_one>input
+{
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+}
+
+.div_two
+{
+	float: left;
+	width: 48%;
+	
+}
+
+.div_two>span
+{
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.div_two>input
+{
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+	
+
+}
+
+.div_three
+{
+	float: left;
+	width: 100%;
+	
+}
+
+.div_three>span
+{
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.div_three>input
+{
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+	margin-top: 6px;
+}
+
+.div_foue
+{
+	float: left;
+	width: 100%;
+}
+
+.div_foue>span
+{
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.div_foue>select
+{
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+	margin-top: 6px;
+}
+
+.div_five
+{
+	float: left;
+	width: 100%;
+}
+
+.div_five>span
+{
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.div_five>textarea
+{
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+	margin-top: 6px;
+}
+
+.div_six
+{
+	float: left;
+	width: 100%;
+}
+
+.div_six>span
+{
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.div_six>input
+{
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+	margin-top: 6px;
+}
+
+.div_seven
+{
+	float: left;
+	width: 100%;
+}
+
+.div_seven>span
+{
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.div_seven>input
+{
+	width: 5%;
+	padding: 10px;
+	font-size: 18px;
+	margin-top: 6px;
+}
+
+
+.div_eight
+{
+	float: left;
+	width: 100%;
+}
+
+.div_eight>button
+{
+	width: 49%;
+	padding: 10px;
+	font-size: 18px;
+	margin-top: 6px;
+}
+
+.div_eight>button[value="submit"]:hover
+{
+	background: #DC473E;
+}
+
+.div_eight>input
+{
+	width: 49%;
+	padding: 10px;
+	font-size: 18px;
+	margin-top: 6px
+}
+
+.div_eight>input[value="reset"]:hover
+{
+	background: #6083BA;
+}
+
+
+

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="content">
+
+	<div class="hared">
+		<h1>javascript practice by Ratin(a-z) begin level</h1>
+	</div>
+
+	
+
+		<div class="main">
+			
+			<div id="ratin" onclick="thisName(this)">click here</div>
+				<script>
+
+				
+				
+					function thisName() {
+
+						var a= 200;
+						this.x=300;
+						this.y=400;
+						this.z=function(){
+							return this.x+this.y;
+						}
+
+					}
+
+
+			
+						var lp =new thisName();
+						document.write(lp.x);
+
+
+
+		</script>
+
+
+		
+		
+
+		
+
+
+	</div>
+
+	<div class="footer" id="show">
+		
+		<h2>this is footer</h2>
+	</div>
+	
+</section>
+
+
+</body>
+</html>

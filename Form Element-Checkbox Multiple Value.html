@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="content">
+
+	<div class="hared">
+		<h1>javascript practice by ratin(a-z) begin level</h1>
+	</div>
+
+
+
+		<div class="main">
+
+
+
+
+
+			<form name="myform">
+
+			<table style="
+	margin: 0 auto;
+">
+				<tr>
+					
+					<td><input type="text" name="tl" onchange="docCal(this.form,this.name)"></td>
+					
+					
+				</tr>
+
+				<tr>
+					
+					<td><input type="checkbox" name="chbox" onclick="docCal(this.form,this.name)"></td>
+					
+					
+				</tr>
+
+				<tr>
+					
+					<td><input type="text" name="result" onchange="docCal(this.form,this.name)"></td>
+					
+					
+				</tr>
+
+				<tr>
+					
+					<td><input type="reset" name="refresh"></td>
+					
+					
+				</tr>
+				
+
+		</table>
+
+</form>
+
+		<script>
+			
+			function docCal(form,pfield) {
+				
+				if(pfield == "result")
+				{
+					if(form.chbox.checked)
+					{
+						form.tl.value = math.sqrt(form.result.value);
+					}
+					else
+					{
+						form.tl. value = form.result.value/2;
+					}
+
+
+
+				}
+				else
+				{
+					if(form.chbox.checked)
+					{
+						form.result.value =form.tl.value*form.tl.value;
+					}
+					else
+					{
+						form.result. value = form.result.value*2;
+					}
+
+				}
+			}
+
+
+
+		</script>
+
+
+
+
+
+
+
+
+   
+
+
+	</div>
+
+	<div class="footer" id="show">
+
+		<h2>this is footer</h2>
+	</div>
+			
+
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="content">
+
+	<div class="hared">
+		<h1>javascript practice by Ratin(a-z) begin level</h1>
+	</div>
+
+	
+
+		<div class="main">
+			
+			
+		
+
+
+
+
+		<script>
+			
+		
+		function timeOutTragger(show) {
+			document.getElementById('show').innerHTML="the time out has been tregreed after 3 sec";
+
+			
+		}
+
+
+		function timeOutinit() {
+			var timeout = setTimeout("timeOutTragger()",3000);
+			document.getElementById("show").innerHTML="the timeout has been started";
+
+		}
+
+		function timeOutClear() {
+			 clearTimeout("timeOutinit().timeout")
+			document.getElementById("show").innerHTML="the timeout has been cleared";
+		}
+
+		</script>
+
+		<div>
+			<button value="Test timeout" onclick="timeOutinit()">start</button>
+			<button value="clear timeout" onclick="timeOutClear()">stop</button>
+		</div>
+		
+		<div id="show"></div>
+
+		
+
+
+	</div>
+
+	<div class="footer" id="show">
+		
+		<h2>this is footer</h2>
+	</div>
+	
+</section>
+
+
+</body>
+</html>

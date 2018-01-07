@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="content">
+
+	<div class="hared">
+		<h1>javascript practice by Ratin(a-z) begin level</h1>
+	</div>
+
+
+
+		<div class="main">
+
+
+			<form name="frm">
+				<table>
+
+								<caption>Exampale of defferents method and properties of math object </caption>
+				<tr>
+					<td>input box: </td>
+					<td><input type="text" name="getvalue"></td>
+
+
+				</tr>
+
+				<tr>
+					<td><input type="button" value="Absolute" onclick="claculate(1)"></td>
+					<td><input type="button" value="Round" onclick="claculate(2)"></td>
+
+				</tr>
+				<tr>
+					<td><input type="button" value="Sin" onclick="claculate(3)"></td>
+					<td><input type="button" value="Cosine" onclick="claculate(4)"></td>
+
+				</tr>
+
+				<tr>
+					<td><input type="button" value="Tangent" onclick="claculate(5)"></td>
+					<td><input type="button" value="Log" onclick="claculate(6)"></td>
+
+				</tr>
+
+				<tr>
+					<td><input type="button" value="Floor" onclick="claculate(7)"></td>
+					<td><input type="button" value="Ceil" onclick="claculate(8)"></td>
+
+				</tr>
+
+				<tr>
+					<td><input type="button" value="Square Root" onclick="claculate(9)"></td>
+					<td><input type="button" value="Random" onclick="claculate(10)"></td>
+
+				</tr>
+
+				<tr>
+					<td><input type="button" value="max" onclick="claculate(11)"></td>
+					<td><input type="button" value="min" onclick="claculate(12)"></td>
+
+				</tr>
+
+				<tr>
+					<td><input type="button" value="E" onclick="claculate(13)"></td>
+					<td><input type="button" value="PI" onclick="claculate(14)"></td>
+
+				</tr>
+					<td>Result box: </td>
+					<td><input type="text" name="showresult"></td>
+
+				<tr>
+					
+				</tr>
+
+
+			</form>
+
+			</table>
+
+
+
+
+
+
+
+
+		<script>
+			
+
+			function claculate(process) {
+				with(document.frm)
+				switch(process)
+				{
+					case 1:
+					showresult.value = Math.abs(getvalue.value);
+					break;
+				
+
+				case 2:
+					showresult.value = Math.round(getvalue.value);
+					break;
+				
+
+				case 3:
+				
+					showresult.value = Math.sin(convDegree(getvalue.value));
+					break;
+				
+
+				case 4:
+				
+					showresult.value = Math.cos(convDegree(getvalue.value));
+					break;
+				
+
+				case 5:
+				
+					showresult.value = Math.tan(convDegree(getvalue.value));
+					break;
+				
+
+				case 6:
+				
+					showresult.value = Math.log(getvalue.value);
+					break;
+				
+
+				case 7:
+					showresult.value = Math.floor(getvalue.value);
+					break;
+
+				case 8:
+					showresult.value = Math.ceil(getvalue.value);
+					break;
+
+				case 9:
+					showresult.value = Math.sqrt(getvalue.value);
+					break;
+
+				case 10:
+					showresult.value = Math.random(getvalue.value);
+					break;	
+
+				case 11:
+					alert(Math.max(getvalue.value, prompt('Enter number', '0')) + "is grater number");
+					break;
+
+				case 12:
+					alert(Math.min(getvalue.value, prompt('Enter number', '0')) + "is samaller number ");
+					break;
+
+
+					case 13:
+					showresult.value= Math.E;
+					break;
+
+				case 14:
+					showresult.value= Math.PI;
+					break;
+				}
+
+
+
+			}
+
+
+			function convDegree(x)
+			{
+				return x*22/7/180;
+			}
+			
+		</script>
+
+
+
+
+
+
+
+
+   
+
+
+	</div>
+
+	<div class="footer" id="show">
+
+		<h2>this is footer</h2>
+	</div>
+			
+
+</section>
+
+
+</body>
+</html>

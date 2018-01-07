@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="content">
+
+	<div class="hared">
+		<h1>javascript practice by Ratin(a-z) begin level</h1>
+	</div>
+
+
+
+		<div class="main">
+
+			<table style="
+	margin: 0 auto;
+">
+				<tr>
+					<td>your input</td>
+					<td><input type="text" id="getvalue" style="width: 300PX;"></td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td><input type="button" value="Check" onclick="getNumber()" style="padding: 10px;margin: 3px;"></td>
+				</tr>
+
+				<tr>
+					<td>result</td>
+					<td><textarea id="showValue" style="height: 161px;"></textarea></td>
+				</tr>
+
+
+			</table>
+
+
+
+		<script>
+
+			/* mango-80 appale-40 rice-89 the-78
+			809zcsdgibGDSAJD
+			$1 $2 $3 ABC(200) 
+			*/
+			
+			function getNumber() {
+				document.getElementById("showValue").value="";
+				var getstring = document.getElementById("getvalue").value;
+				var result = getstring.match(/\d/g);
+				
+
+
+				for(i=0; i<result.length; i++)
+				{
+					document.getElementById("showValue").value += result[i]+"\n";
+				}
+			}
+			
+		</script>
+
+
+
+
+
+
+
+
+   
+
+
+	</div>
+
+	<div class="footer" id="show">
+
+		<h2>this is footer</h2>
+	</div>
+			
+
+</section>
+
+
+</body>
+</html>

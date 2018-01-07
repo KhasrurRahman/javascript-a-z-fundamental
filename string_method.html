@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="content">
+
+	<div class="hared">
+		<h1>javascript practice by Ratin(a-z) begin level</h1>
+	</div>
+
+	
+
+		<div class="main">
+			
+			
+		
+
+
+
+
+		<script>
+			
+			String.prototype.revMe =  function(){
+
+				var s = "";
+				var i = this.length;
+
+				while(i>0){
+					s += this.substring(i-1, i);
+					i--;
+					
+				}
+				return s;
+			}
+
+
+			var x = "A B C D";
+			document.write(x.revMe());
+
+
+		</script>
+
+
+		
+		
+
+		
+
+
+	</div>
+
+	<div class="footer" id="show">
+		
+		<h2>this is footer</h2>
+	</div>
+	
+</section>
+
+
+</body>
+</html>

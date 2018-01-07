@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="content">
+	<div class="hared"><h1>javascript practice by Ratin(a-z) begin level</h1></div>
+
+	<div id="show">
+			
+
+		</div>
+
+		<div class="main">
+			<div>
+				<input id="codeText" type="text">
+				<button onclick="checkCodeing()">Check</button>
+			</div>
+
+				<div id="show"></div>
+
+
+
+				<script>
+
+				
+				function checkCodeing() {
+
+
+					var txt;
+					var coding = document.getElementById("codeText").value;
+
+						switch(coding){
+							case "java":
+							txt ="i love java";
+							break;
+
+							case "php":
+							txt = "i love php";
+							break;
+
+							case "c#":
+							txt="my favourite langugae";
+							break;
+
+							default:
+						    txt="nothing.....";
+						}
+
+
+						document.getElementById("show").innerHTML= txt;
+
+
+			          }
+
+
+							
+
+
+
+
+
+			
+
+
+
+
+
+		</script>
+
+
+		
+		
+
+		
+
+
+	</div>
+
+	<div class="footer" id="show">
+		
+		<h2>this is footer</h2>
+	</div>
+	
+</section>
+
+
+</body>
+</html>

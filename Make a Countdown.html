@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="content">
+
+	<div class="hared">
+		<h1>javascript practice by Ratin(a-z) begin level</h1>
+	</div>
+
+
+
+		<div class="main">
+
+
+
+
+
+
+
+		<script>
+
+				var countdown;
+				var countdownNumber;
+
+				function countdownInit(show) {
+					countdownNumber=11;
+					countdownTrigger();
+
+				}
+
+
+				function countdownTrigger() {
+						if (countdownNumber>0) {
+							countdownNumber--;
+							document.getElementById("show").innerHTML=countdownNumber;
+							if (countdownNumber>0) {
+									countdown=setTimeout("countdownTrigger()",100);
+							}
+
+						}
+
+				}
+
+				function timeOutClear() {
+					 clearTimeout(countdown)
+					//sdocument.getElementById("show").innerHTML="the timeout has been cleared";
+				}
+
+		</script>
+
+		<div>
+			<button value="Test timeout" onclick="countdownInit()">start</button>
+
+			<button value="clear timeout" onclick="timeOutClear()">stop</button>
+		</div>
+
+		<div id="show"></div>
+
+
+
+
+	</div>
+
+	<div class="footer" id="show">
+
+		<h2>this is footer</h2>
+	</div>
+
+</section>
+
+
+</body>
+</html>

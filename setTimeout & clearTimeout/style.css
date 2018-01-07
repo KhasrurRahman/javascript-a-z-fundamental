@@ -1,0 +1,6 @@
+*{margin: 0;padding: 0;outline: 0}
+body{font-family: arial;font-size: 18px;color: #444;line-height: 25px;background:#5A5B5C;}
+.content{background: #f0f0f0;width: 800px;margin: 0 auto;}
+.main{min-height: 500px;background:#fff;padding: 5px 10px;margin: 10px;}
+
+.hared,.footer{padding: 10px;text-align: center;background:#ddd }
