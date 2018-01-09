@@ -1,1 +1,1 @@
-# javascript-a-z-fundametal
+# javascript-a-z-fundamental
